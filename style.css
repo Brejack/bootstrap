@@ -23,55 +23,56 @@ header{
 }
 
 
-/*button#menu {
-	 Ocultamos el boton en escritorio 
+button#menu {
+	
     display: none;
-    background: transparent;
-}*/
+    background: red;
+    width: 100px;
+    position: sticky;
+    top:0;
+    height: 35px;
+}
 
 
 .hamburger {
 	padding: 0.5%;
     min-height: 30px;
-    max-width: 50px;
+    max-width:;
     display: none;
+
+
 }
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
     background-color: blue;
-    position: absolute;
+    
     width: 40px;
     height: 4px;
     border-radius: 5px;
     content: '';
-    transition-timing-function: ease;
-    transition-duration: .2s;
-    transition-property: transform,opacity;
-
+ 	
+ 	
 }
 
-.hamburger-inner:before {
-    top: 10px;
-}
-.hamburger-inner:after {
-    top: 20px;
-}
 
-.hamburger:hover + aside#superior {
+
+button#menu:focus + aside#superior {
 	/* Si es pulsado el boton, mostramos el nav.
 	Esto lo puedo hacer porque adquiere el foco.
 	Solo funcionará, si el botón y el menú esta a la misma altura. */
     display: block;
 }
 
-aside#superior:hover{
-	display: block;
-	
-	background: #51D5CC;	
+aside{
+	   position: sticky;
+    top: 0px;
+    background: yellow;
 }
 
 
 aside#superior ul {
     display: flex;
+    position: sticky;
+    top:0;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -107,6 +108,7 @@ article{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin: 1%;
 	width: 22%;	
 }
@@ -124,21 +126,30 @@ footer{
 
 @media (max-width: 996px){
 	article{
-		width: 80%;
+		width: 40%;
 	}
 }
 
 @media (max-width: 764px){
 	article{
-		width: 81%;
+		width: 80%;
 	}
 	.hamburger {
+       
         display: flex;
-        justify-content: center;
-    
-
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items:  center;
     }
-
+    button#menu {
+        display: block;
+    }
+    aside{
+	   position: sticky;
+    	top: 35px;
+    	width: 30%;
+    	background: yellow;
+}
      .hamburger-inner{
      	display: block;
      }
