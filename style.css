@@ -120,9 +120,10 @@ article{
 	flex-wrap: wrap;
     align-items: center;
 	margin: 1%;
-	width: 22%;	
+	width: 20%;	
     background: purple; 
     text-align: center;
+    padding: 1% ;
 }
 
 article img{
