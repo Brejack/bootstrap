@@ -63,7 +63,7 @@ button#menu:focus + aside#superior {
 }
 
 aside{
-	   position: sticky;
+	position: sticky;
     top: 0px;
     background: yellow;
 }
@@ -80,14 +80,9 @@ aside#superior ul {
 }
 
 aside#superior ul a {
-  
-   display: flex;
-   
-    text-decoration: none;
-
-    text-align: left;
- 
-    
+	display: flex;   
+	text-decoration: none;
+	text-align: left;    
 }
 
 aside#superior ul a:hover {
