@@ -18,13 +18,27 @@ body{
 
 header{
 	display: flex;
-	
+	align-items: center;
 	background: #51C1E2;
+    justify-content: space-between;
+    padding:  1%; 
 }
 
+.headd{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header i{
+    font-size: 300%;
+}
+
+.social {
+    float: right;
+}
 
 button#menu {
-	
     display: none;
     background: red;
     width: 100px;
@@ -39,9 +53,8 @@ button#menu {
     min-height: 30px;
     max-width:;
     display: none;
-
-
 }
+
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
     background-color: blue;
     
@@ -49,11 +62,7 @@ button#menu {
     height: 4px;
     border-radius: 5px;
     content: '';
- 	
- 	
 }
-
-
 
 button#menu:focus + aside#superior {
 	/* Si es pulsado el boton, mostramos el nav.
@@ -94,9 +103,14 @@ aside#superior ul a:hover {
 main{
 
 	background: #E85078;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+
+}
+
+.article-container{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 article{
@@ -106,6 +120,7 @@ article{
 	flex-wrap: wrap;
 	margin: 1%;
 	width: 22%;	
+
 }
 
 article img{
@@ -123,12 +138,24 @@ footer{
 	article{
 		width: 40%;
 	}
+        article img{
+    max-width: 100%;
+    
+    }
 }
 
-@media (max-width: 764px){
+@media (max-width: 768px){
 	article{
 		width: 80%;
 	}
+    article img{
+    max-width: 500px;
+    
+    }
+    article .text{
+        width: 100%;
+    }
+
 	.hamburger {      
         display: flex;
     	flex-direction: column;
@@ -155,8 +182,6 @@ footer{
 	aside#superior ul {
         flex-direction: column;
     }
-
-
 }
 
 
