@@ -124,13 +124,13 @@ footer{
 
 @media (max-width: 996px){
 	article{
-		width: 40%;
+		width: 80%;
 	}
 }
 
 @media (max-width: 764px){
 	article{
-		width: 80%;
+		width: 81%;
 	}
 	.hamburger {
         display: flex;
