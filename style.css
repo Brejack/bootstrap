@@ -118,9 +118,11 @@ article{
 	flex-direction: column;
 	justify-content: space-between;
 	flex-wrap: wrap;
+    align-items: center;
 	margin: 1%;
 	width: 22%;	
-
+    background: purple; 
+    text-align: center;
 }
 
 article img{
@@ -135,9 +137,9 @@ footer{
 }
 
 @media (max-width: 996px){
-	article{
-		width: 40%;
-	}
+    article{
+        width: 40%;
+    }
         article img{
     max-width: 100%;
     
