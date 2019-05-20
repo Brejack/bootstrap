@@ -119,13 +119,13 @@ footer{
 
 }
 
-@media (max-width: 996px){
+@media (max-width: 1200px){
 	article{
 		width: 40%;
 	}
 }
 
-@media (max-width: 764px){
+@media (max-width: 996px){
 	article{
 		width: 80%;
 	}
